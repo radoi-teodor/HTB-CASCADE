@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Enumeration" unique_id="25" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1689364717" ts_lastsave="1689367819">
+    <rich_text>Not shown: 65520 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON          VERSION
+53/tcp    open  domain        syn-ack ttl 127 Microsoft DNS 6.1.7601 (1DB15D39) (Windows Server 2008 R2 SP1)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB15D39)
+88/tcp    open  kerberos-sec  syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2023-07-14 19:58:25Z)
+135/tcp   open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: cascade.local, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack ttl 127
+636/tcp   open  tcpwrapped    syn-ack ttl 127
+3268/tcp  open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: cascade.local, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped    syn-ack ttl 127
+5985/tcp  open  http          syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49154/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49155/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49157/tcp open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49170/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC</rich_text>
+    <node name="Port139" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1689365109" ts_lastsave="1689365272">
+      <rich_text>[+] Server 10.129.143.95 allows sessions using username '', password ''
+
+ =======================================( Users on 10.129.143.95 )=======================================
+
+index: 0xee0 RID: 0x464 acb: 0x00000214 Account: a.turnbull     Name: Adrian Turnbull   Desc: (null)
+index: 0xebc RID: 0x452 acb: 0x00000210 Account: arksvc Name: ArkSvc    Desc: (null)
+index: 0xee4 RID: 0x468 acb: 0x00000211 Account: b.hanson       Name: Ben Hanson        Desc: (null)
+index: 0xee7 RID: 0x46a acb: 0x00000210 Account: BackupSvc      Name: BackupSvc Desc: (null)
+index: 0xdeb RID: 0x1f5 acb: 0x00000215 Account: CascGuest      Name: (null)    Desc: Built-in account for guest access to the computer/domain
+index: 0xee5 RID: 0x469 acb: 0x00000210 Account: d.burman       Name: David Burman      Desc: (null)
+index: 0xee3 RID: 0x467 acb: 0x00000211 Account: e.crowe        Name: Edward Crowe      Desc: (null)
+index: 0xeec RID: 0x46f acb: 0x00000211 Account: i.croft        Name: Ian Croft Desc: (null)
+index: 0xeeb RID: 0x46e acb: 0x00000210 Account: j.allen        Name: Joseph Allen      Desc: (null)
+index: 0xede RID: 0x462 acb: 0x00000210 Account: j.goodhand     Name: John Goodhand     Desc: (null)
+index: 0xed7 RID: 0x45c acb: 0x00000210 Account: j.wakefield    Name: James Wakefield   Desc: (null)
+index: 0xeca RID: 0x455 acb: 0x00000210 Account: r.thompson     Name: Ryan Thompson     Desc: (null)
+index: 0xedd RID: 0x461 acb: 0x00000210 Account: s.hickson      Name: Stephanie Hickson Desc: (null)
+index: 0xebd RID: 0x453 acb: 0x00000210 Account: s.smith        Name: Steve Smith       Desc: (null)
+index: 0xed2 RID: 0x457 acb: 0x00000210 Account: util   Name: Util      Desc: (null)
+
+
+[+] Trying protocol 445/SMB...
+
+[+] Found domain(s):
+
+        [+] CASCADE
+        [+] Builtin
+
+[+] Password Info for Domain: CASCADE
+
+        [+] Minimum password length: 5
+        [+] Password history length: None
+        [+] Maximum password age: Not Set
+        [+] Password Complexity Flags: 000000
+
+                [+] Domain Refuse Password Change: 0
+                [+] Domain Password Store Cleartext: 0
+                [+] Domain Password Lockout Admins: 0
+                [+] Domain Password No Clear Change: 0
+                [+] Domain Password No Anon Change: 0
+                [+] Domain Password Complex: 0
+
+        [+] Minimum password age: None
+        [+] Reset Account Lockout Counter: 30 minutes
+        [+] Locked Account Duration: 30 minutes
+        [+] Account Lockout Threshold: None
+        [+] Forced Log off Time: Not Set
+
+
+[+] Getting builtin groups:
+
+group:[Pre-Windows 2000 Compatible Access] rid:[0x22a]
+group:[Incoming Forest Trust Builders] rid:[0x22d]
+group:[Windows Authorization Access Group] rid:[0x230]
+group:[Terminal Server License Servers] rid:[0x231]
+group:[Users] rid:[0x221]
+group:[Guests] rid:[0x222]
+group:[Remote Desktop Users] rid:[0x22b]
+group:[Network Configuration Operators] rid:[0x22c]
+group:[Performance Monitor Users] rid:[0x22e]
+group:[Performance Log Users] rid:[0x22f]
+group:[Distributed COM Users] rid:[0x232]
+group:[IIS_IUSRS] rid:[0x238]
+group:[Cryptographic Operators] rid:[0x239]
+group:[Event Log Readers] rid:[0x23d]
+group:[Certificate Service DCOM Access] rid:[0x23e]
+
+[+]  Getting builtin group memberships:
+
+Group: Windows Authorization Access Group' (RID: 560) has member: NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS
+Group: Pre-Windows 2000 Compatible Access' (RID: 554) has member: NT AUTHORITY\Authenticated Users
+Group: Guests' (RID: 546) has member: CASCADE\CascGuest
+Group: Guests' (RID: 546) has member: CASCADE\Domain Guests
+Group: Users' (RID: 545) has member: NT AUTHORITY\INTERACTIVE
+Group: Users' (RID: 545) has member: NT AUTHORITY\Authenticated Users
+Group: Users' (RID: 545) has member: CASCADE\Domain Users
+
+
+
+[+]  Getting local groups:
+
+group:[Cert Publishers] rid:[0x205]
+group:[RAS and IAS Servers] rid:[0x229]
+group:[Allowed RODC Password Replication Group] rid:[0x23b]
+group:[Denied RODC Password Replication Group] rid:[0x23c]
+group:[DnsAdmins] rid:[0x44e]
+group:[IT] rid:[0x459]
+group:[Production] rid:[0x45a]
+group:[HR] rid:[0x45b]
+group:[AD Recycle Bin] rid:[0x45f]
+group:[Backup] rid:[0x460]
+group:[Temps] rid:[0x463]
+group:[WinRMRemoteWMIUsers__] rid:[0x465]
+group:[Remote Management Users] rid:[0x466]
+group:[Factory] rid:[0x46c]
+group:[Finance] rid:[0x46d]
+group:[Audit Share] rid:[0x471]
+group:[Data Share] rid:[0x472]
+
+[+]  Getting local group memberships:
+
+Group: Remote Management Users' (RID: 1126) has member: CASCADE\arksvc
+Group: Remote Management Users' (RID: 1126) has member: CASCADE\s.smith
+Group: Data Share' (RID: 1138) has member: CASCADE\Domain Users
+Group: HR' (RID: 1115) has member: CASCADE\s.hickson
+Group: IT' (RID: 1113) has member: CASCADE\arksvc
+Group: IT' (RID: 1113) has member: CASCADE\s.smith
+Group: IT' (RID: 1113) has member: CASCADE\r.thompson
+Group: Audit Share' (RID: 1137) has member: CASCADE\s.smith
+Group: Denied RODC Password Replication Group' (RID: 572) has member: CASCADE\krbtgt
+Group: Denied RODC Password Replication Group' (RID: 572) has member: CASCADE\Domain Controllers
+Group: Denied RODC Password Replication Group' (RID: 572) has member: CASCADE\Schema Admins
+Group: Denied RODC Password Replication Group' (RID: 572) has member: CASCADE\Enterprise Admins
+Group: Denied RODC Password Replication Group' (RID: 572) has member: CASCADE\Cert Publishers
+Group: Denied RODC Password Replication Group' (RID: 572) has member: CASCADE\Domain Admins
+Group: Denied RODC Password Replication Group' (RID: 572) has member: CASCADE\Group Policy Creator Owners
+Group: Denied RODC Password Replication Group' (RID: 572) has member: CASCADE\Read-only Domain Controllers
+Group: AD Recycle Bin' (RID: 1119) has member: CASCADE\arksvc
+</rich_text>
+    </node>
+    <node name="Port389" unique_id="29" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1689367819" ts_lastsave="1689367858">
+      <rich_text>We can enumerate LDAP using:
+</rich_text>
+      <codebox char_offset="29" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">ldapsearch -s sub -x -b "dc=CASCADE,dc=LOCAL" objectclass=* -H ldap://10.129.143.95 &gt; ldap_search.txt</codebox>
+    </node>
+    <node name="Port 3268" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1689364955" ts_lastsave="1689364995">
+      <rich_text>PORT     STATE SERVICE REASON          VERSION
+3268/tcp open  ldap    syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: </rich_text>
+      <rich_text weight="heavy">cascade.local</rich_text>
+      <rich_text>, Site: Default-First-Site-Name)
+| ldap-search: 
+|   Context: DC=cascade,DC=local
+|     dn: DC=cascade,DC=local
+|         objectClass: top
+|         objectClass: domain
+|         objectClass: domainDNS
+|         distinguishedName: DC=cascade,DC=local
+|         instanceType: 5
+|         whenCreated: 2020/01/09 15:31:32 UTC
+|         whenChanged: 2023/07/14 19:53:33 UTC
+|         subRefs: DC=ForestDnsZones,DC=cascade,DC=local
+|         subRefs: DC=DomainDnsZones,DC=cascade,DC=local
+|         subRefs: CN=Configuration,DC=cascade,DC=local
+|         uSNCreated: 4099
+|         uSNChanged: 344149
+|         name: cascade
+|         objectGUID: 6fd3434-bae0-484b-92be-88e4c5926638
+|         objectSid: 1-5-21-3332504370-1206983947-1165150453
+|         wellKnownObjects: B:32:6227F0AF1FC2410D8E3BB10615BB5B0F:CN=NTDS Quotas,DC=cascade,DC=local
+|         wellKnownObjects: B:32:F4BE92A4C777485E878E9421D53087DB:CN=Microsoft,CN=Program Data,DC=cascade,DC=local
+|         wellKnownObjects: B:32:09460C08AE1E4A4EA0F64AEE7DAA1E5A:CN=Program Data,DC=cascade,DC=local
+|         wellKnownObjects: B:32:22B70C67D56E4EFB91E9300FCA3DC1AA:CN=ForeignSecurityPrincipals,DC=cascade,DC=local
+|         wellKnownObjects: B:32:18E2EA80684F11D2B9AA00C04F79F805:CN=Deleted Objects,DC=cascade,DC=local
+|         wellKnownObjects: B:32:2FBAC1870ADE11D297C400C04FD8D5CD:CN=Infrastructure,DC=cascade,DC=local
+|         wellKnownObjects: B:32:AB8153B7768811D1ADED00C04FD8D5CD:CN=LostAndFound,DC=cascade,DC=local
+|         wellKnownObjects: B:32:AB1D30F3768811D1ADED00C04FD8D5CD:CN=System,DC=cascade,DC=local
+|         wellKnownObjects: B:32:A361B2FFFFD211D1AA4B00C04FD7D83A:OU=Domain Controllers,DC=cascade,DC=local
+|         wellKnownObjects: B:32:AA312825768811D1ADED00C04FD8D5CD:CN=Computers,DC=cascade,DC=local
+|         wellKnownObjects: B:32:A9D1CA15768811D1ADED00C04FD8D5CD:CN=Users,DC=cascade,DC=local
+|         objectCategory: CN=Domain-DNS,CN=Schema,CN=Configuration,DC=cascade,DC=local
+|         gPLink: [LDAP://CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=cascade,DC=local;0]
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|         masteredBy: CN=NTDS Settings,CN=CASC-DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=cascade,DC=local
+|         msDs-masteredBy: CN=NTDS Settings,CN=CASC-DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=cascade,DC=local
+|         msDS-IsDomainFor: CN=NTDS Settings,CN=CASC-DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=cascade,DC=local
+|         dc: cascade
+|     dn: CN=Users,DC=cascade,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: Users
+|         description: Default container for upgraded user accounts
+|         distinguishedName: CN=Users,DC=cascade,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/01/09 15:31:39 UTC
+|         whenChanged: 2020/01/09 15:31:39 UTC
+|         uSNCreated: 5696
+|         uSNChanged: 5696
+|         name: Users
+|         objectGUID: d231c67-414-df4d-b413-e4aa7349bc19
+</rich_text>
+    </node>
+  </node>
+  <node name="Exploitation" unique_id="28" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1689367791" ts_lastsave="1689367974">
+    <rich_text># </rich_text>
+    <rich_text weight="heavy">Ryan Thompson</rich_text>
+    <rich_text>, Users, UK, cascade.local
+dn: CN=Ryan Thompson,OU=Users,OU=UK,DC=cascade,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Ryan Thompson
+sn: Thompson
+givenName: Ryan 
+distinguishedName: CN=Ryan Thompson,OU=Users,OU=UK,DC=cascade,DC=local
+instanceType: 4
+whenCreated: 20200109193126.0Z
+whenChanged: 20200323112031.0Z
+displayName: Ryan Thompson
+uSNCreated: 24610
+memberOf: CN=IT,OU=Groups,OU=UK,DC=cascade,DC=local
+uSNChanged: 295010
+name: Ryan Thompson
+objectGUID:: LfpD6qngUkupEy9bFXBBjA==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 132247339091081169
+lastLogoff: 0
+lastLogon: 132247339125713230
+pwdLastSet: 132230718862636251
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAMvuhxgsd8Uf1yHJFVQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 2
+</rich_text>
+    <rich_text weight="heavy">sAMAccountName: r.thompson</rich_text>
+    <rich_text>
+sAMAccountType: 805306368
+userPrincipalName: r.thompson@cascade.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=cascade,DC=local
+dSCorePropagationData: 20200126183918.0Z
+dSCorePropagationData: 20200119174753.0Z
+dSCorePropagationData: 20200119174719.0Z
+dSCorePropagationData: 20200119174508.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 132294360317419816
+msDS-SupportedEncryptionTypes: 0
+</rich_text>
+    <rich_text weight="heavy">cascadeLegacyPwd: clk0bjVldmE=</rich_text>
+    <rich_text> =&gt; </rich_text>
+    <rich_text weight="heavy">rY4n5eva</rich_text>
+    <rich_text>
+
+We can en</rich_text>
+  </node>
+</cherrytree>

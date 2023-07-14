@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Fri Jul 14 15:58:35 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/tcp53/tcp_53_dns_nmap.txt -oX /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/tcp53/xml/tcp_53_dns_nmap.xml 10.129.143.95 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/tcp53/tcp_53_dns_nmap.txt -oX /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/tcp53/xml/tcp_53_dns_nmap.xml 10.129.143.95" start="1689364715" startstr="Fri Jul 14 15:58:35 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="53"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1689364716"/>
+<taskend task="NSE" time="1689364716"/>
+<taskbegin task="NSE" time="1689364716"/>
+<taskend task="NSE" time="1689364716"/>
+<taskbegin task="NSE" time="1689364716"/>
+<taskend task="NSE" time="1689364716"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1689364716"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1689364716"/>
+<taskbegin task="SYN Stealth Scan" time="1689364716"/>
+<taskend task="SYN Stealth Scan" time="1689364716" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1689364716"/>
+<taskend task="Service scan" time="1689364722" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1689364722"/>
+<taskend task="NSE" time="1689364737"/>
+<taskbegin task="NSE" time="1689364737"/>
+<taskend task="NSE" time="1689364737"/>
+<taskbegin task="NSE" time="1689364737"/>
+<taskend task="NSE" time="1689364737"/>
+<host starttime="1689364716" endtime="1689364737"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.143.95" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Microsoft DNS" version="6.1.7601 (1DB15D39)" extrainfo="Windows Server 2008 R2 SP1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:dns</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></service><script id="dns-nsec3-enum" output="Can&apos;t determine domain for host 10.129.143.95; use dns-nsec3-enum.domains script arg."/><script id="dns-nsec-enum" output="Can&apos;t determine domain for host 10.129.143.95; use dns-nsec-enum.domains script arg."/><script id="dns-nsid" output="&#xa;  bind.version: Microsoft DNS 6.1.7601 (1DB15D39)"><elem key="bind.version">Microsoft DNS 6.1.7601 (1DB15D39)</elem>
+</script></port>
+</ports>
+<hostscript><script id="dns-brute" output="Can&apos;t guess domain of &quot;10.129.143.95&quot;; use dns-brute.domain script argument."/></hostscript><times srtt="59620" rttvar="59620" to="298100"/>
+</host>
+<taskbegin task="NSE" time="1689364737"/>
+<taskend task="NSE" time="1689364737"/>
+<taskbegin task="NSE" time="1689364737"/>
+<taskend task="NSE" time="1689364737"/>
+<taskbegin task="NSE" time="1689364737"/>
+<taskend task="NSE" time="1689364737"/>
+<runstats><finished time="1689364737" timestr="Fri Jul 14 15:58:57 2023" summary="Nmap done at Fri Jul 14 15:58:57 2023; 1 IP address (1 host up) scanned in 22.27 seconds" elapsed="22.27" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

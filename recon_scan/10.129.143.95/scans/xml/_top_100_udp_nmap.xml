@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Fri Jul 14 15:56:42 2023 as: nmap -vv -&#45;reason -Pn -T4 -sU -A -&#45;top-ports 100 -oN /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/_top_100_udp_nmap.txt -oX /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/xml/_top_100_udp_nmap.xml 10.129.143.95 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sU -A -&#45;top-ports 100 -oN /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/_top_100_udp_nmap.txt -oX /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/xml/_top_100_udp_nmap.xml 10.129.143.95" start="1689364602" startstr="Fri Jul 14 15:56:42 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="100" services="7,9,17,19,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,427,443,445,497,500,514-515,518,520,593,623,626,631,996-999,1022-1023,1025-1030,1433-1434,1645-1646,1701,1718-1719,1812-1813,1900,2000,2048-2049,2222-2223,3283,3456,3703,4444,4500,5000,5060,5353,5632,9200,10000,17185,20031,30718,31337,32768-32769,32771,32815,33281,49152-49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201,65024"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1689364602"/>
+<taskend task="NSE" time="1689364602"/>
+<taskbegin task="NSE" time="1689364602"/>
+<taskend task="NSE" time="1689364602"/>
+<taskbegin task="NSE" time="1689364602"/>
+<taskend task="NSE" time="1689364602"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1689364602"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1689364602"/>
+<taskbegin task="UDP Scan" time="1689364602"/>
+<taskend task="UDP Scan" time="1689364608" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1689364608"/>
+<taskprogress task="Service scan" time="1689364705" percent="3.00" remaining="3137" etc="1689367841"/>
+<taskprogress task="Service scan" time="1689364803" percent="33.00" remaining="396" etc="1689365199"/>
+<taskprogress task="Service scan" time="1689364900" percent="63.00" remaining="172" etc="1689365071"/>
+<taskend task="Service scan" time="1689365003" extrainfo="100 services on 1 host"/>
+<taskbegin task="Traceroute" time="1689365004"/>
+<taskend task="Traceroute" time="1689365004"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1689365004"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1689365004"/>
+<taskbegin task="NSE" time="1689365004"/>
+<taskprogress task="NSE" time="1689365035" percent="98.60" remaining="1" etc="1689365035"/>
+<taskprogress task="NSE" time="1689365065" percent="98.61" remaining="1" etc="1689365066"/>
+<taskprogress task="NSE" time="1689365095" percent="98.63" remaining="2" etc="1689365096"/>
+<taskprogress task="NSE" time="1689365125" percent="98.69" remaining="2" etc="1689365127"/>
+<taskprogress task="NSE" time="1689365155" percent="98.70" remaining="2" etc="1689365157"/>
+<taskprogress task="NSE" time="1689365185" percent="98.72" remaining="3" etc="1689365187"/>
+<taskprogress task="NSE" time="1689365215" percent="98.78" remaining="3" etc="1689365218"/>
+<taskprogress task="NSE" time="1689365245" percent="98.81" remaining="3" etc="1689365248"/>
+<taskprogress task="NSE" time="1689365275" percent="98.83" remaining="4" etc="1689365278"/>
+<taskprogress task="NSE" time="1689365305" percent="98.88" remaining="4" etc="1689365308"/>
+<taskprogress task="NSE" time="1689365335" percent="98.89" remaining="4" etc="1689365339"/>
+<taskprogress task="NSE" time="1689365365" percent="98.94" remaining="4" etc="1689365369"/>
+<taskprogress task="NSE" time="1689365395" percent="98.96" remaining="5" etc="1689365399"/>
+<taskprogress task="NSE" time="1689365425" percent="98.99" remaining="5" etc="1689365429"/>
+<taskprogress task="NSE" time="1689365455" percent="99.04" remaining="5" etc="1689365459"/>
+<taskprogress task="NSE" time="1689365485" percent="99.07" remaining="5" etc="1689365490"/>
+<taskprogress task="NSE" time="1689365515" percent="99.09" remaining="5" etc="1689365520"/>
+<taskprogress task="NSE" time="1689365545" percent="99.13" remaining="5" etc="1689365550"/>
+<taskprogress task="NSE" time="1689365575" percent="99.15" remaining="5" etc="1689365580"/>
+<taskprogress task="NSE" time="1689365605" percent="99.16" remaining="6" etc="1689365610"/>
+<taskprogress task="NSE" time="1689365635" percent="99.17" remaining="6" etc="1689365640"/>
+<taskprogress task="NSE" time="1689365665" percent="99.25" remaining="6" etc="1689365670"/>
+<taskprogress task="NSE" time="1689365695" percent="99.26" remaining="6" etc="1689365700"/>
+<taskprogress task="NSE" time="1689365725" percent="99.31" remaining="5" etc="1689365730"/>
+<taskprogress task="NSE" time="1689365755" percent="99.33" remaining="6" etc="1689365760"/>
+<taskprogress task="NSE" time="1689365785" percent="99.36" remaining="6" etc="1689365790"/>
+<taskprogress task="NSE" time="1689365815" percent="99.39" remaining="5" etc="1689365820"/>
+<taskprogress task="NSE" time="1689365845" percent="99.41" remaining="6" etc="1689365850"/>
+<taskprogress task="NSE" time="1689365875" percent="99.47" remaining="5" etc="1689365880"/>
+<taskprogress task="NSE" time="1689365905" percent="99.49" remaining="5" etc="1689365910"/>
+<taskprogress task="NSE" time="1689365935" percent="99.51" remaining="5" etc="1689365940"/>
+<taskprogress task="NSE" time="1689365952" percent="99.54" remaining="5" etc="1689365956"/>
+<taskprogress task="NSE" time="1689365982" percent="99.56" remaining="5" etc="1689365986"/>
+<taskprogress task="NSE" time="1689366012" percent="99.57" remaining="5" etc="1689366016"/>
+<taskprogress task="NSE" time="1689366042" percent="99.62" remaining="4" etc="1689366046"/>
+<taskprogress task="NSE" time="1689366072" percent="99.65" remaining="4" etc="1689366076"/>
+<taskprogress task="NSE" time="1689366102" percent="99.70" remaining="4" etc="1689366105"/>
+<taskprogress task="NSE" time="1689366132" percent="99.72" remaining="4" etc="1689366135"/>
+<taskprogress task="NSE" time="1689366162" percent="99.76" remaining="3" etc="1689366165"/>
+<taskprogress task="NSE" time="1689366192" percent="99.78" remaining="3" etc="1689366195"/>
+<taskprogress task="NSE" time="1689366222" percent="99.81" remaining="3" etc="1689366224"/>
+<taskprogress task="NSE" time="1689366252" percent="99.84" remaining="2" etc="1689366254"/>
+<taskprogress task="NSE" time="1689366282" percent="99.90" remaining="2" etc="1689366283"/>
+<taskprogress task="NSE" time="1689366312" percent="99.91" remaining="2" etc="1689366313"/>
+<taskprogress task="NSE" time="1689366342" percent="99.95" remaining="1" etc="1689366343"/>
+<taskprogress task="NSE" time="1689366372" percent="99.97" remaining="1" etc="1689366372"/>
+<taskend task="NSE" time="1689366378"/>
+<taskbegin task="NSE" time="1689366378"/>
+<taskend task="NSE" time="1689366384"/>
+<taskbegin task="NSE" time="1689366384"/>
+<taskend task="NSE" time="1689366384"/>
+<host starttime="1689364602" endtime="1689366384"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.143.95" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="98">
+<extrareasons reason="no-response" count="98" proto="udp" ports="7,9,17,19,49,67-69,80,88,111,120,135-139,158,161-162,177,427,443,445,497,500,514-515,518,520,593,623,626,631,996-999,1022-1023,1025-1030,1433-1434,1645-1646,1701,1718-1719,1812-1813,1900,2000,2048-2049,2222-2223,3283,3456,3703,4444,4500,5000,5060,5353,5632,9200,10000,17185,20031,30718,31337,32768-32769,32771,32815,33281,49152-49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201,65024"/>
+</extraports>
+<port protocol="udp" portid="53"><state state="open" reason="udp-response" reason_ttl="127"/><service name="domain" product="Microsoft DNS" version="6.1.7601 (1DB15D39)" extrainfo="Windows Server 2008 R2 SP1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:dns</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: Microsoft DNS 6.1.7601 (1DB15D39)"><elem key="bind.version">Microsoft DNS 6.1.7601 (1DB15D39)</elem>
+</script></port>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="127"/><service name="ntp" product="NTP" version="v3" method="probed" conf="10"/><script id="ntp-info" output="&#xa;  receive time stamp: 2023-07-14T20:03:35"><elem key="receive time stamp">2023-07-14T20:03:35</elem>
+</script></port>
+</ports>
+<os><osmatch name="Allen Bradley MicroLogix 1100 PLC" accuracy="100" line="2242">
+<osclass type="specialized" vendor="Allen-Bradley" osfamily="embedded" accuracy="100"><cpe>cpe:/h:allen-bradley:micrologix_1100</cpe></osclass>
+</osmatch>
+<osmatch name="Atcom AT-320 VoIP phone" accuracy="100" line="8534">
+<osclass type="VoIP phone" vendor="Atcom" osfamily="embedded" accuracy="100"><cpe>cpe:/h:atcom:at-320</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Embedded Standard 7" accuracy="100" line="77958">
+<osclass type="specialized" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 8.1 Update 1" accuracy="100" line="78066">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="100"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Phone 7.5 or 8.0" accuracy="100" line="79354">
+<osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="100"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012" accuracy="100" line="85400">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="100"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2012</cpe></osclass>
+</osmatch>
+<osmatch name="Palmmicro AR1688 VoIP module" accuracy="100" line="92721">
+<osclass type="VoIP phone" vendor="Palmmicro" osfamily="embedded" accuracy="100"/>
+</osmatch>
+<osmatch name="VMware Player virtual NAT device" accuracy="100" line="104497">
+<osclass type="specialized" vendor="VMware" osfamily="Player" accuracy="100"><cpe>cpe:/a:vmware:player</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.94%E=4%D=7/14%OT=%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=64B1AF70%P=x86_&#xa;OS:64-pc-linux-gnu)SEQ(II=I)U1(R=N)IE(R=Y%DFI=N%TG=80%CD=Z)&#xa;"/>
+</os>
+<distance value="2"/>
+<hostscript><script id="clock-skew" output="8s"><elem key="mean">8</elem>
+<elem key="median">8</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+</script></hostscript><trace port="53" proto="udp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="59.36"/>
+<hop ttl="2" ipaddr="10.129.143.95" rtt="63.20"/>
+</trace>
+<times srtt="61532" rttvar="7932" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1689366384"/>
+<taskend task="NSE" time="1689366384"/>
+<taskbegin task="NSE" time="1689366384"/>
+<taskend task="NSE" time="1689366384"/>
+<taskbegin task="NSE" time="1689366384"/>
+<taskend task="NSE" time="1689366384"/>
+<runstats><finished time="1689366384" timestr="Fri Jul 14 16:26:24 2023" summary="Nmap done at Fri Jul 14 16:26:24 2023; 1 IP address (1 host up) scanned in 1781.81 seconds" elapsed="1781.81" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

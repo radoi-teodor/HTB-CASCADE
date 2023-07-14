@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Fri Jul 14 15:56:42 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/xml/_full_tcp_nmap.xml 10.129.143.95 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/_full_tcp_nmap.txt -oX /home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/xml/_full_tcp_nmap.xml 10.129.143.95" start="1689364602" startstr="Fri Jul 14 15:56:42 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1689364602"/>
+<taskend task="NSE" time="1689364602"/>
+<taskbegin task="NSE" time="1689364602"/>
+<taskend task="NSE" time="1689364602"/>
+<taskbegin task="NSE" time="1689364602"/>
+<taskend task="NSE" time="1689364602"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1689364602"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1689364602"/>
+<taskbegin task="SYN Stealth Scan" time="1689364602"/>
+<taskprogress task="SYN Stealth Scan" time="1689364633" percent="21.89" remaining="111" etc="1689364744"/>
+<taskprogress task="SYN Stealth Scan" time="1689364663" percent="57.37" remaining="46" etc="1689364708"/>
+<taskend task="SYN Stealth Scan" time="1689364699" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1689364699"/>
+<taskend task="Service scan" time="1689364761" extrainfo="15 services on 1 host"/>
+<taskbegin task="Traceroute" time="1689364766"/>
+<taskend task="Traceroute" time="1689364766"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1689364766"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1689364766"/>
+<taskbegin task="NSE" time="1689364766"/>
+<taskprogress task="NSE" time="1689364797" percent="99.95" remaining="1" etc="1689364797"/>
+<taskend task="NSE" time="1689364806"/>
+<taskbegin task="NSE" time="1689364806"/>
+<taskend task="NSE" time="1689364808"/>
+<taskbegin task="NSE" time="1689364808"/>
+<taskend task="NSE" time="1689364808"/>
+<host starttime="1689364602" endtime="1689364808"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.143.95" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65520">
+<extrareasons reason="no-response" count="65520" proto="tcp" ports="1-52,54-87,89-134,136-138,140-388,390-444,446-635,637-3267,3270-5984,5986-49153,49156,49159-49169,49171-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Microsoft DNS" version="6.1.7601 (1DB15D39)" extrainfo="Windows Server 2008 R2 SP1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:dns</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: Microsoft DNS 6.1.7601 (1DB15D39)"><elem key="bind.version">Microsoft DNS 6.1.7601 (1DB15D39)</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2023-07-14 19:58:25Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: cascade.local, Site: Default-First-Site-Name" hostname="CASC-DC1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: cascade.local, Site: Default-First-Site-Name" hostname="CASC-DC1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49158"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49170"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<osmatch name="Microsoft Windows 8.1 Update 1" accuracy="92" line="78066">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="92"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Phone 7.5 or 8.0" accuracy="92" line="79354">
+<osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="92"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Embedded Standard 7" accuracy="91" line="77958">
+<osclass type="specialized" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 or Windows Server 2008 R2" accuracy="89" line="74402">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="89"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="89" line="74621">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 or Windows 8.1" accuracy="89" line="74947">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="89"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1 or Windows 8" accuracy="89" line="75131">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="89"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="89" line="76477">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="89"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 R2" accuracy="89" line="77694">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="89"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1" accuracy="89" line="77762">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="89"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008::sp2</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.94%E=4%D=7/14%OT=53%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=64B1A948%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=109%GCD=1%ISR=108%TI=I%II=I%SS=S%TS=7)&#xa;OPS(O1=M53CNW8ST11%O2=M53CNW8ST11%O3=M53CNW8NNT11%O4=M53CNW8ST11%O5=M53CNW8ST11%O6=M53CST11)&#xa;WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)&#xa;ECN(R=Y%DF=Y%TG=80%W=2000%O=M53CNW8NNS%CC=N%Q=)&#xa;T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=N)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=80%CD=Z)&#xa;"/>
+</os>
+<uptime seconds="411" lastboot="Fri Jul 14 15:53:17 2023"/>
+<distance value="2"/>
+<tcpsequence index="265" difficulty="Good luck!" values="84AB4467,6FDC0CCF,5E6055CA,B7F71753,B51D8192,36297E55"/>
+<ipidsequence class="Incremental" values="AFA,AFD,AFF,B02,B04,B07"/>
+<tcptssequence class="100HZ" values="8FB0,8FB8,8FC4,8FCB,8FD7,8FE0"/>
+<hostscript><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 41366/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 32050/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 47455/udp): CLEAN (Timeout)&#xa;  Check 4 (port 64189/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-security-mode" output="&#xa;  2:1:0: &#xa;    Message signing enabled and required"><table key="2:1:0">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="clock-skew" output="0s"><elem key="median">0</elem>
+<elem key="mean">0</elem>
+<elem key="count">1</elem>
+<elem key="stddev">0</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2023-07-14T19:59:28&#xa;  start_date: 2023-07-14T19:53:43"><elem key="date">2023-07-14T19:59:28</elem>
+<elem key="start_date">2023-07-14T19:53:43</elem>
+</script></hostscript><trace port="445" proto="tcp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="57.94"/>
+<hop ttl="2" ipaddr="10.129.143.95" rtt="58.13"/>
+</trace>
+<times srtt="62416" rttvar="7000" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1689364808"/>
+<taskend task="NSE" time="1689364808"/>
+<taskbegin task="NSE" time="1689364808"/>
+<taskend task="NSE" time="1689364808"/>
+<taskbegin task="NSE" time="1689364808"/>
+<taskend task="NSE" time="1689364808"/>
+<runstats><finished time="1689364808" timestr="Fri Jul 14 16:00:08 2023" summary="Nmap done at Fri Jul 14 16:00:08 2023; 1 IP address (1 host up) scanned in 205.95 seconds" elapsed="205.95" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

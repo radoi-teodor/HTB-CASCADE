@@ -1,0 +1,29 @@
+```bash
+dig -p 53 -x 10.129.143.95 @10.129.143.95
+```
+
+[/home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/tcp53/tcp_53_dns_reverse-lookup.txt](file:///home/kali/Documents/HTB/Cascade/recon_scan/10.129.143.95/scans/tcp53/tcp_53_dns_reverse-lookup.txt):
+
+```
+
+; <<>> DiG 9.18.12-1-Debian <<>> -p 53 -x 10.129.143.95 @10.129.143.95
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: FORMERR, id: 39647
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 696d0c1cd578594e (echoed)
+;; QUESTION SECTION:
+;95.143.129.10.in-addr.arpa.	IN	PTR
+
+;; Query time: 56 msec
+;; SERVER: 10.129.143.95#53(10.129.143.95) (UDP)
+;; WHEN: Fri Jul 14 15:58:35 EDT 2023
+;; MSG SIZE  rcvd: 67
+
+
+
+```
